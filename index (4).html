@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adriana Lynn Hughes, PharmD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1B3A6B;--navy-light:#2a4f8f;--gold:#B8965A;--cream:#FAFAF6;--warm-white:#F5F3EE;--dark:#1a1a2e;--gray:#6b7280;--light-gray:#e8e6e0;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 4rem;background:rgba(250,250,246,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--light-gray);}
+  .nav-name{font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;text-decoration:none;}
+  .nav-links{display:flex;gap:2.5rem;list-style:none;}
+  .nav-links a{font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);text-decoration:none;font-weight:500;transition:color 0.2s;}
+  .nav-links a:hover{color:var(--navy);}
+  .page-content{padding-top:80px;}
+  .hero{padding:6rem 0 0;display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 80px);}
+  .hero-left{padding:5rem 5rem 5rem 8rem;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--light-gray);}
+  .hero-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.8s ease 0.2s forwards;}
+  .hero-name{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,4vw,4rem);line-height:1.1;color:var(--navy);font-weight:700;margin-bottom:0.5rem;opacity:0;animation:fadeUp 0.8s ease 0.4s forwards;}
+  .hero-creds{font-family:'Lora',serif;font-size:1rem;color:var(--gold);font-style:italic;margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.8s ease 0.5s forwards;}
+  .hero-cta{display:inline-flex;align-items:center;gap:0.75rem;background:var(--navy);color:white;padding:0.9rem 2rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;transition:all 0.3s;width:fit-content;opacity:0;animation:fadeUp 0.8s ease 0.7s forwards;}
+  .hero-cta:hover{background:var(--navy-light);}
+  .hero-right{padding:5rem 8rem 5rem 5rem;display:flex;flex-direction:column;justify-content:center;gap:2rem;}
+  .story-p{font-family:'Lora',serif;font-size:1.05rem;line-height:1.9;color:#3d3d4e;opacity:0;animation:fadeUp 0.8s ease forwards;}
+  .story-p:nth-child(1){animation-delay:0.4s;}
+  .story-p:nth-child(2){animation-delay:0.6s;}
+  .story-p:nth-child(3){animation-delay:0.8s;}
+  .pull-quote{border-left:3px solid var(--gold);padding:1rem 1.5rem;background:var(--warm-white);opacity:0;animation:fadeUp 0.8s ease 1s forwards;}
+  .pull-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:1.05rem;color:var(--navy);line-height:1.6;}
+  footer{background:#0f1f3d;padding:2rem 6rem;display:flex;justify-content:space-between;align-items:center;}
+  footer p{font-size:0.78rem;color:rgba(255,255,255,0.3);}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  @media(max-width:900px){nav{padding:1rem 2rem}.hero{grid-template-columns:1fr;min-height:auto}.hero-left{padding:4rem 2rem 2rem;border-right:none;border-bottom:1px solid var(--light-gray)}.hero-right{padding:2rem 2rem 4rem}footer{padding:2rem;flex-direction:column;gap:0.5rem;text-align:center}}
+</style>
+</head>
+<body>
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 4rem;background:rgba(250,250,246,0.95);backdrop-filter:blur(12px);border-bottom:1px solid #e8e6e0;">
+  <a href="index.html" style="font-family:'Playfair Display',serif;font-size:1rem;color:#1B3A6B;font-weight:600;text-decoration:none;">Adriana Lynn Hughes</a>
+</nav>
+<div class="page-content">
+  <div class="hero">
+    <div class="hero-left">
+      <h1 class="hero-name">Adriana<br>Lynn Hughes</h1>
+      <p class="hero-creds">PharmD, RPh, CPh</p>
+      <a href="resume.html" target="_blank" style="display:inline-block;margin-top:1.5rem;padding:0.6rem 1.4rem;border:1px solid var(--gold);color:var(--gold);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.background='var(--gold)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">Print My Resume</a>
+    </div>
+    <div class="hero-right" style="display:flex;flex-direction:column;justify-content:center;gap:2.5rem;">
+      <p style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3rem);color:var(--navy);font-weight:700;line-height:1.2;opacity:0;animation:fadeUp 0.8s ease 0.5s forwards;">Pharmacist.<br>Advocate.<br>Changemaker.</p>
+      <div style="display:flex;flex-direction:column;gap:0.75rem;opacity:0;animation:fadeUp 0.8s ease 0.8s forwards;max-width:280px;">
+        <a href="impact.html" style="display:flex;justify-content:space-between;align-items:center;padding:0.85rem 1.5rem;background:var(--navy);color:white;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;transition:background 0.3s;" onmouseover="this.style.background='#2a4f8f'" onmouseout="this.style.background='#1B3A6B'">Impact <span>&rarr;</span></a>
+        <a href="publications.html" style="display:flex;justify-content:space-between;align-items:center;padding:0.85rem 1.5rem;border:1px solid var(--light-gray);color:var(--dark);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;background:white;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--navy)';this.style.color='var(--navy)'" onmouseout="this.style.borderColor='var(--light-gray)';this.style.color='var(--dark)'">Publications <span>&rarr;</span></a>
+        <a href="awards.html" style="display:flex;justify-content:space-between;align-items:center;padding:0.85rem 1.5rem;border:1px solid var(--light-gray);color:var(--dark);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;background:white;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--navy)';this.style.color='var(--navy)'" onmouseout="this.style.borderColor='var(--light-gray)';this.style.color='var(--dark)'">Awards <span>&rarr;</span></a>
+        <a href="lectures.html" style="display:flex;justify-content:space-between;align-items:center;padding:0.85rem 1.5rem;border:1px solid var(--light-gray);color:var(--dark);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;background:white;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--navy)';this.style.color='var(--navy)'" onmouseout="this.style.borderColor='var(--light-gray)';this.style.color='var(--dark)'">Lectures <span>&rarr;</span></a>
+        <a href="mailto:adrianalhughes@gmail.com" style="display:flex;justify-content:space-between;align-items:center;padding:0.85rem 1.5rem;border:1px solid var(--gold);color:var(--gold);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;background:white;transition:all 0.3s;" onmouseover="this.style.background='var(--gold)';this.style.color='white'" onmouseout="this.style.background='white';this.style.color='var(--gold)'">Get in Touch <span>&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer><p>Adriana Lynn Hughes, PharmD, RPh, CPh &nbsp;|&nbsp; Tampa Bay, Florida</p><p>adrianahughes.com</p></footer>
+</body>
+</html>
