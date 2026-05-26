@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impact — Adriana Lynn Hughes, PharmD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1B3A6B;--gold:#B8965A;--cream:#FAFAF6;--warm-white:#F5F3EE;--dark:#1a1a2e;--gray:#6b7280;--light-gray:#e8e6e0;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 4rem;background:rgba(250,250,246,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--light-gray);}
+  .nav-name{font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;text-decoration:none;}
+  .nav-links{display:flex;gap:2.5rem;list-style:none;}
+  .nav-links a{font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);text-decoration:none;font-weight:500;transition:color 0.2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--navy);}
+  .page-content{padding-top:80px;}
+  .page-header{padding:5rem 8rem 4rem;background:var(--navy);}
+  .section-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1rem;}
+  .page-header h1{font-family:'Playfair Display',serif;font-size:3.2rem;color:white;font-weight:700;}
+  .page-header p{font-family:'Lora',serif;font-size:1rem;color:rgba(255,255,255,0.6);margin-top:1rem;max-width:560px;line-height:1.8;}
+  .impact-body{padding:5rem 8rem;}
+  .impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+  .impact-card{background:white;padding:2.5rem;border-top:3px solid transparent;transition:all 0.3s ease;}
+  .impact-card:hover{border-top-color:var(--gold);transform:translateY(-4px);box-shadow:0 20px 60px rgba(27,58,107,0.08);}
+  .impact-card.featured{background:var(--navy);}
+  .impact-card.wide{grid-column:span 2;}
+  .impact-number{font-family:'Playfair Display',serif;font-size:2.8rem;color:var(--gold);font-weight:700;line-height:1;margin-bottom:0.5rem;}
+  .impact-card.featured .impact-number{color:white;}
+  .impact-title{font-size:0.95rem;font-weight:500;color:var(--navy);margin-bottom:0.75rem;line-height:1.4;}
+  .impact-card.featured .impact-title{color:rgba(255,255,255,0.9);}
+  .impact-desc{font-size:0.85rem;color:var(--gray);line-height:1.75;}
+  .impact-card.featured .impact-desc{color:rgba(255,255,255,0.55);}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+  footer{background:#0f1f3d;padding:2rem 6rem;display:flex;justify-content:space-between;align-items:center;}
+  footer p{font-size:0.78rem;color:rgba(255,255,255,0.3);}
+  @media(max-width:900px){nav{padding:1rem 2rem}.page-header{padding:4rem 2rem 3rem}.impact-body{padding:4rem 2rem}.impact-grid{grid-template-columns:1fr}.impact-card.wide{grid-column:span 1}footer{padding:2rem;flex-direction:column;gap:0.5rem;text-align:center}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-name">Adriana Lynn Hughes</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="impact.html" class="active">Impact</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="page-content">
+  <div class="page-header">
+    <p class="section-label">Impact</p>
+    <h1>Clinical work that changed systems.</h1>
+    <p>Five years of building programs, changing policies, and measuring what actually matters.</p>
+  </div>
+  <div class="impact-body">
+    <div class="impact-grid">
+      <div class="impact-card reveal">
+        <div class="impact-number">$2M</div>
+        <div class="impact-title">Utilization Management Program</div>
+        <div class="impact-desc">Designed and led a UM program delivering $2M in drug cost savings through a 5% reduction in utilization. Negotiated the contractual prescribing target from 15% down to 5% to preserve clinical outcomes and avoid downstream medical costs.</div>
+      </div>
+      <div class="impact-card reveal">
+        <div class="impact-number">ADA</div>
+        <div class="impact-title">2026 Standards of Care</div>
+        <div class="impact-desc">Submitted clinical findings on GLP-1 and DPP-4 inhibitor duplication to the American Diabetes Association. Their 2026 Standards of Care now include a statement directly addressing this duplication.</div>
+      </div>
+      <div class="impact-card reveal">
+        <div class="impact-number">$236K</div>
+        <div class="impact-title">Polypharmacy Intervention Program</div>
+        <div class="impact-desc">Validated $236,152 in combined savings across 40 provider interventions from October 2023 to March 2024, then advocated upstream to embed the fix at the prior authorization level — creating structural prevention before prescriptions are ever filled.</div>
+      </div>
+      <div class="impact-card reveal">
+        <div class="impact-number">7</div>
+        <div class="impact-title">Health Plan Relationships</div>
+        <div class="impact-desc">Built and maintained active monthly relationships with pharmacy teams across seven major health plans including Florida Blue and UnitedHealthcare — leading formulary education, PA redesign, and payer strategy discussions incorporating downstream medical cost offsets.</div>
+      </div>
+      <div class="impact-card featured reveal">
+        <div class="impact-number">GLP-1</div>
+        <div class="impact-title">Patient Education and Policy Change</div>
+        <div class="impact-desc">Developed dual-approved GLP-1 patient education materials and identified patients on non-therapeutic Mounjaro titration doses. Advocated with Florida Blue until coverage policy changed to ensure members advance to therapeutically effective doses.</div>
+      </div>
+      <div class="impact-card reveal">
+        <div class="impact-number">60+</div>
+        <div class="impact-title">Clinics and 500K+ Members</div>
+        <div class="impact-desc">Clinical protocols and educational resources deployed across 60+ Florida clinics, adopted as standard onboarding materials for all new providers and cross-functional teams across a 500,000+ member population.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer><p>Adriana Lynn Hughes, PharmD, RPh, CPh &nbsp;|&nbsp; Tampa Bay, Florida</p><p>adrianahughes.com</p></footer>
+<script>
+  const reveals=document.querySelectorAll('.reveal');
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.1});
+  reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

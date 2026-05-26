@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awards — Adriana Lynn Hughes, PharmD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1B3A6B;--gold:#B8965A;--cream:#FAFAF6;--warm-white:#F5F3EE;--dark:#1a1a2e;--gray:#6b7280;--light-gray:#e8e6e0;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 4rem;background:rgba(250,250,246,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--light-gray);}
+  .nav-name{font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;text-decoration:none;}
+  .nav-links{display:flex;gap:2.5rem;list-style:none;}
+  .nav-links a{font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);text-decoration:none;font-weight:500;transition:color 0.2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--navy);}
+  .page-content{padding-top:80px;}
+  .page-header{padding:5rem 8rem 4rem;background:var(--navy);}
+  .section-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1rem;}
+  .page-header h1{font-family:'Playfair Display',serif;font-size:3.2rem;color:white;font-weight:700;}
+  .awards-body{padding:5rem 8rem;}
+  .awards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;max-width:900px;}
+  .award-card{background:white;padding:2.5rem;border-top:3px solid var(--gold);transition:all 0.3s;}
+  .award-card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(27,58,107,0.08);}
+  .award-card.featured{background:var(--navy);}
+  .award-year{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
+  .award-title{font-family:'Lora',serif;font-size:1.1rem;color:var(--navy);font-weight:500;margin-bottom:0.4rem;}
+  .award-card.featured .award-title{color:white;}
+  .award-org{font-size:0.82rem;color:var(--gray);}
+  .award-card.featured .award-org{color:rgba(255,255,255,0.55);}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+  footer{background:#0f1f3d;padding:2rem 6rem;display:flex;justify-content:space-between;align-items:center;}
+  footer p{font-size:0.78rem;color:rgba(255,255,255,0.3);}
+  @media(max-width:900px){nav{padding:1rem 2rem}.page-header{padding:4rem 2rem 3rem}.awards-body{padding:4rem 2rem}.awards-grid{grid-template-columns:1fr}footer{padding:2rem;flex-direction:column;gap:0.5rem;text-align:center}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-name">Adriana Lynn Hughes</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="impact.html">Impact</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="awards.html" class="active">Awards</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="page-content">
+  <div class="page-header">
+    <p class="section-label">Awards</p>
+    <h1>Honors &amp; Recognition</h1>
+  </div>
+  <div class="awards-body">
+    <div class="awards-grid">
+      <div class="award-card reveal">
+        <div class="award-year">2015</div>
+        <div class="award-title">William Carlton Scholar</div>
+        <div class="award-org">UF College of Liberal Arts and Sciences</div>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-year">2018</div>
+        <div class="award-title">AACP Wal-Mart Scholar</div>
+        <div class="award-org">American Association of Colleges of Pharmacy</div>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-year">2019</div>
+        <div class="award-title">Excellence in Inter-Professionalism</div>
+        <div class="award-org">USF Health Taneja College of Pharmacy</div>
+      </div>
+      <div class="award-card featured reveal">
+        <div class="award-year">2019</div>
+        <div class="award-title">Most Likely to Find a Cure</div>
+        <div class="award-org">Kappa Epsilon Pharmaceutical Fraternity</div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer><p>Adriana Lynn Hughes, PharmD, RPh, CPh &nbsp;|&nbsp; Tampa Bay, Florida</p><p>adrianahughes.com</p></footer>
+<script>
+  const reveals=document.querySelectorAll('.reveal');
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.1});
+  reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
