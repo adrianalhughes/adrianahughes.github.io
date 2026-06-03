@@ -9,7 +9,6 @@
   <style>
     :root {
       --navy:   #1B3A6B;
-      --navy-light: #2a4f8f;
       --gold:   #B8965A;
       --cream:  #FAFAF6;
       --warm-white: #F5F3EE;
@@ -32,21 +31,16 @@
       font-size: 1rem; color: var(--navy); font-weight: 600;
       text-decoration: none;
     }
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-    .nav-links a {
-      font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--gray); text-decoration: none; font-weight: 500;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--navy); }
+    /* Hide the nav links in the top bar on the homepage */
+    .nav-links { display: none; }
 
     /* ── PAGE CONTENT ── */
     .page-content { padding-top: 80px; }
 
     /* ── HERO ── */
     .hero {
-      padding: 6rem 0 0;
-      display: grid; grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       min-height: calc(100vh - 80px);
     }
     .hero-left {
@@ -54,11 +48,10 @@
       display: flex; flex-direction: column;
       justify-content: center;
       border-right: 1px solid var(--light-gray);
-      opacity: 0; animation: fadeUp 0.8s ease forwards 0.1s;
     }
     .hero-tag {
       font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 1.5rem; opacity: 0.9;
+      color: var(--gold); margin-bottom: 1.5rem;
     }
     .hero-name {
       font-family: 'Playfair Display', serif;
@@ -69,11 +62,7 @@
     .hero-creds {
       font-family: 'Lora', serif;
       font-size: 1rem; color: var(--gold); font-style: italic;
-      letter-spacing: 0.05em; margin-bottom: 2.5rem;
-    }
-    .hero-tagline {
-      font-size: 0.9rem; color: var(--gray); line-height: 1.7;
-      max-width: 360px; margin-bottom: 3rem;
+      letter-spacing: 0.05em; margin-bottom: 3rem;
     }
     .btn-resume {
       display: inline-block; border: 1px solid var(--gold);
@@ -89,7 +78,6 @@
       padding: 5rem 5rem 5rem 5rem;
       display: flex; flex-direction: column;
       justify-content: center;
-      opacity: 0; animation: fadeUp 0.8s ease forwards 0.25s;
     }
     .hero-headline {
       font-family: 'Playfair Display', serif;
@@ -117,7 +105,6 @@
       background: var(--warm-white);
       border-top: 1px solid var(--light-gray);
       border-bottom: 1px solid var(--light-gray);
-      opacity: 0; animation: fadeUp 0.8s ease forwards 0.4s;
     }
     .section-eyebrow {
       font-size: 0.65rem; letter-spacing: 0.25em;
@@ -160,11 +147,6 @@
       display: flex; justify-content: space-between;
       letter-spacing: 0.08em;
     }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
   </style>
 </head>
 <body>
@@ -192,13 +174,13 @@
 
     <div class="hero-right">
       <div class="hero-headline">Pharmacist.<br>Advocate.<br>Changemaker.</div>
-      <nav class="nav-buttons">
+      <div class="nav-buttons">
         <a href="impact.html" class="nav-btn active">IMPACT <span>&rarr;</span></a>
         <a href="publications.html" class="nav-btn">PUBLICATIONS <span>&rarr;</span></a>
         <a href="awards.html" class="nav-btn">AWARDS <span>&rarr;</span></a>
         <a href="lectures.html" class="nav-btn">LECTURES <span>&rarr;</span></a>
         <a href="mailto:adrianalhughes@gmail.com" class="nav-btn gold">GET IN TOUCH <span>&rarr;</span></a>
-      </nav>
+      </div>
     </div>
   </section>
 
