@@ -27,6 +27,9 @@
   .lec-year{font-size:0.72rem;letter-spacing:0.1em;color:var(--gold);font-weight:500;padding-top:0.2rem;}
   .lec-title{font-family:'Lora',serif;font-size:1rem;color:var(--dark);line-height:1.5;margin-bottom:0.3rem;font-weight:500;}
   .lec-source{font-size:0.8rem;color:var(--gray);font-style:italic;}
+  .lec-link{display:contents;text-decoration:none;color:inherit;}
+  .lec-play{font-size:0.9rem;color:var(--gold);padding-top:0.2rem;}
+  .lec-item:has(.lec-link):hover .lec-title{color:var(--navy);text-decoration:underline;}
   footer{background:#0f1f3d;padding:2rem 6rem;display:flex;justify-content:space-between;align-items:center;}
   footer p{font-size:0.78rem;color:rgba(255,255,255,0.3);}
   @media(max-width:900px){nav{padding:1rem 2rem}.page-header{padding:4rem 2rem 3rem}.lec-body{padding:4rem 2rem}footer{padding:2rem;flex-direction:column;gap:0.5rem;text-align:center}}
@@ -94,6 +97,30 @@
             <div class="lec-title">Anti-histamines, Analgesics &amp; Anti-emetics</div>
             <div class="lec-source">USF College of Nursing</div>
           </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="lec-category">
+      <div class="cat-title">Early Career Videos</div>
+      <ul class="lec-list">
+        <li class="lec-item">
+          <a class="lec-link" href="https://www.facebook.com/watch/?v=270073315222856" target="_blank" rel="noopener">
+            <span class="lec-play">&#9654;</span>
+            <div>
+              <div class="lec-title">Marketing Interview with Reliance Medical Centers Private Practice</div>
+              <div class="lec-source">Reliance Medical Centers</div>
+            </div>
+          </a>
+        </li>
+        <li class="lec-item">
+          <a class="lec-link" href="https://www.youtube.com/watch?v=4Fc66g2bp0Q" target="_blank" rel="noopener">
+            <span class="lec-play">&#9654;</span>
+            <div>
+              <div class="lec-title">Traveling with Medications (Holiday Travel)</div>
+              <div class="lec-source">Sarasota Memorial Residency Program</div>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
